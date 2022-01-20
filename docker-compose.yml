@@ -19,7 +19,7 @@ services:
 
   app2:
     build:
-      context: app1
+      context: app2
       dockerfile: Dockerfile
     volumes:
       - app2:/app/build
