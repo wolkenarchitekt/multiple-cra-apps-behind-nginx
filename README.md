@@ -31,14 +31,14 @@ The stack (nginx+react) can be started with:
 docker-compose up
 ```
 
-Then, open browser, pointing to `http://localhost:8009`.
+Then, open browser, pointing to `http://localhost:${NGINX_PORT}`.
 This will only show app1.
 
 ## GOAL
 
 The goal is to be able to open each CRA-app using a separate URL:
 
-* `http://localhost:8009/app1`
-* `http://localhost:8009/app2`
+* `http://localhost:${NGINX_PORT}/app1`
+* `http://localhost:${NGINX_PORT}/app2`
 
 All static resources should be loaded correctly from each root directory.
